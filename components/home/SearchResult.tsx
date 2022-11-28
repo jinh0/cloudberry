@@ -43,7 +43,7 @@ const SearchResult = ({ initCourses }: { initCourses: CourseType[] }) => {
           </>
         )}
       </p>
-      <p className='border-b'></p>
+      <p className='border-b dark:border-dark4'></p>
 
       <CourseList courses={results} />
     </div>

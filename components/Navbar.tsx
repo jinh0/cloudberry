@@ -22,8 +22,10 @@ const NavItem = ({
     <Link href={href}>
       <div
         className={
-          'first:pl-0 text-base lg:text-lg font-medium px-4 lg:px-6 cursor-pointer py-2 hover:text-black transition duration-200 rounded-full ' +
-          (active ? 'text-black' : 'text-slate-600')
+          'first:pl-0 text-base lg:text-lg font-medium px-4 lg:px-6 cursor-pointer py-2 hover:text-black dark:hover:text-white transition duration-200 rounded-full ' +
+          (active
+            ? 'text-black dark:text-white'
+            : 'text-slate-600 dark:text-darkFg1')
         }
       >
         {title}
@@ -40,13 +42,13 @@ const Navbar = () => {
   const path = pathname.split('/')
 
   return (
-    <div className='flex flex-row sticky top-0 z-50 bg-white bg-opacity-60 backdrop-blur-md w-full px-6 lg:px-20 py-2.5 border-b items-center select-none justify-between truncate transition-all'>
+    <div className='flex flex-row sticky top-0 z-50 bg-white dark:bg-dark2 bg-opacity-60 backdrop-blur-md w-full px-6 lg:px-20 py-2.5 border-b dark:border-none items-center select-none justify-between truncate transition-all'>
       <div className='flex flex-row items-center'>
         <Link href='/'>
           <div className='flex flex-row items-center cursor-pointer'>
-            <AcademicCapIcon className='w-8 h-8 text-mcgill mr-4 lg:mr-2' />
+            <AcademicCapIcon className='w-8 h-8 text-mcgill dark:text-darkRed mr-4 lg:mr-2' />
 
-            <p className='hidden lg:inline-block text-xl font-bold text-mcgill pr-4 border-r mr-4'>
+            <p className='hidden lg:inline-block text-xl font-bold text-mcgill dark:text-white pr-4 border-r mr-4'>
               CloudBerry
             </p>
           </div>

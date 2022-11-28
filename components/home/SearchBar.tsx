@@ -13,7 +13,7 @@ const SearchBar = () => {
       <input
         value={input}
         onChange={evt => setInput(evt.target.value)}
-        className='outline-none w-full px-2 text-black'
+        className='outline-none w-full px-2 text-black dark:bg-dark1 dark:text-darkFg3'
         placeholder='Search for a course...'
         autoFocus
         autoCorrect='off'

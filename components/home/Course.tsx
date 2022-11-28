@@ -11,7 +11,7 @@ const Course = ({ course }: { course: CourseType }) => {
   return (
     <div
       className={
-        'border-b py-6 text-lg group' +
+        'border-b dark:border-dark4 py-6 text-lg group' +
         (course.terms.length === 0 && ' text-gray-700')
       }
     >

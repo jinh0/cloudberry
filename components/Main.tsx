@@ -43,10 +43,10 @@ const Main = ({
         ></meta>
       </Head>
 
-      <div className='w-screen h-full'>
+      <div className='w-screen h-full dark:text-darkFg3 dark:bg-dark1'>
         <div className='min-h-screen pb-16'>
           <Navbar />
-          <div className='px-6 lg:px-20 py-4 md:py-6 overflow-auto'>
+          <div className='px-6 lg:px-20 py-4 md:py-6 overflow-auto dark:bg-dark1'>
             {children}
           </div>
         </div>
